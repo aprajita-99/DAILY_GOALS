@@ -1,0 +1,263 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    background-color:#F2F9ED;
+    font-family: 'poppins',sans-serif;
+
+}
+.main{
+    margin-bottom:30px;
+}
+h1{
+    margin:15px;
+    font-size:4.8em;
+    font-weight:700;
+    text-align: center;
+}
+#card {
+    background-color:#FBFBFB;
+    width:52%;
+    margin-inline:auto; /*auto means margin on both sides will be set so as to put the element in center */
+    border-radius: 15px;
+    padding:32px 42px;
+    box-shadow: 0px 0px 6px 1px #888886 ;
+}
+.sub-head {
+  font-size:32px;
+  font-weight:700;
+  display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+.bar-text{
+    font-size:15px;
+    color:rgb(80, 80, 80);
+    margin-top:28px;
+    font-weight:400;
+}
+.bar{
+    border-radius:15px;
+    background-color: #48A3001A;
+    height:30px;
+    width:100%;
+    margin-top:23px;
+    box-shadow:0px 0px 2px 1px #888886 ;
+}
+.progress{
+    display:flex;
+    border-radius:15px;
+    background-color: #48A300;
+    height:100%;
+    width:0%;  /* to be varied using javascript for progress bar*/
+}
+.progress p{
+    font-size:1rem;
+    color:#EEFFE0;
+    margin-left:12px;
+    align-self: center;
+}
+.warning_text{
+  font-size:14px;
+  margin-top:13px;
+  margin-bottom:20px;
+  color:red;
+}
+.goal-1 , .goal-2 ,.goal-3{
+    display:flex;
+    width: 100%;
+    background-color:white;
+    height:75px;
+    border-radius:17px;
+    border: 1px solid #0000001A;
+    margin-bottom:40px;
+    align-items: center;
+}
+
+.check{
+    margin:20px;
+    border-radius:50%;
+    border: 2px solid #0000001A;
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+    cursor:pointer;
+}
+.check:hover {
+    border: 3px solid #48A300;
+}
+.input-1 ,.input-2 ,.input-3{
+    border:none;
+    height:70px;
+    font-family:inherit;
+    outline:none;
+    flex-grow:1;
+    border-radius:15px;
+}
+.input-1::placeholder{
+    color:#0000002e;
+    font-size:16px;
+    font-weight:400;
+}
+.input-2::placeholder{
+    color:#0000002e;
+    font-size:16px;
+    font-weight:400;
+}
+.input-3::placeholder{
+    color:#0000002e;
+    font-size:16px;
+    font-weight:400;
+}
+.quote{
+    font-weight:500;
+    font-size:16px;
+    text-align: center;
+}
+.credit{
+    font-size:12px;
+    text-align: center;
+    color:#00000053;
+    margin-top:16px;
+    font-weight:500;
+}
+.credit span{
+    color:red;
+}
+@keyframes animation1{
+    0% {rotate:0deg;}
+    100%{rotate:360deg;}
+}
+.sun{
+    animation-name:animation1;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-duration:10s;
+}
+.input-text-1,.input-text-2,.input-text-3{
+    color:#000000;
+    font-weight:500;
+    font-size:18px;
+}
+
+.check_marked{
+    margin:20px;
+    border-radius:50%;
+    border: 2px solid #0000001A;
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+    cursor:pointer;
+    background-color:#48A300;
+    background-image:url(Vector\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.striked{
+    color:#48A300;
+    text-decoration:line-through;
+    text-decoration-color: #48A300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+ h1{
+    font-size:32px;
+ }
+ #card{
+    padding:16px 28px;
+    width:70%;
+ }
+ .sub-head{
+    font-size:22px;
+ }
+ .bar{
+    height:25px;
+    margin-top:15px;
+ }
+ .bar-text{
+    margin-top:16px;
+    font-size:10px;
+ }
+ .progress p{
+    font-size:9px;
+ }
+ .warning_text{
+    font-size:10px;
+    margin-top:9px;
+    margin-bottom:15px;
+  }
+  .goal-1 , .goal-2 ,.goal-3{
+      height:60px;
+      border-radius:15px;
+      margin-bottom:20px;
+  }
+  .check{
+      margin:16px;
+  }
+  .check:hover {
+      border: 3px solid #48A300;
+  }
+  .input-1 ,.input-2 ,.input-3{
+      height:45px;
+      width:60%;
+  }
+  .input-text-1,.input-text-2,.input-text-3{
+    color:#000000;
+    font-weight:500;
+    font-size:14px;
+}
+  .input-1::placeholder{
+      color:#0000002e;
+      font-size:10px;
+      font-weight:400;
+  }
+  .input-2::placeholder{
+      color:#0000002e;
+      font-size:10px;
+      font-weight:400;
+  }
+  .input-3::placeholder{
+      color:#0000002e;
+      font-size:10px;
+  }
+  .quote{
+      font-size:13px;
+  }
+  .credit{
+      font-size:10px;
+      margin-top:13px;
+  }
+ 
+}
+@media(max-width:450px){
+    .progress p{
+        font-size:6px;
+     }
+}
